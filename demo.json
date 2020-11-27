@@ -1,0 +1,22 @@
+{
+  "status": 1,
+  "attendance": {
+    "entrylocation": {
+      "type": "Point",
+      "coordinates": []
+    },
+    "exitlocation": {
+      "type": "Point",
+      "coordinates": []
+    }
+  },
+  "fieldReport": {
+    "images": [],
+    "poc": [{
+      "name": "",
+      "email": "",
+      "number": ""
+    }],
+    "uos": 0
+  }
+}

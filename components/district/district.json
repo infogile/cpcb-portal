@@ -1,0 +1,527 @@
+[{
+    "short_code": "AG",
+    "name": "Agra",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "AL",
+    "name": "Aligarh",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "AH",
+    "name": "Allahabad",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "AN",
+    "name": "Ambedkar Nagar",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "AM",
+    "name": "Amethi",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "JP",
+    "name": "Amroha",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "AU",
+    "name": "Auraiya",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "AZ",
+    "name": "Azamgarh",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "BG",
+    "name": "Bagpat",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "BH",
+    "name": "Bahraich",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "BL",
+    "name": "Ballia",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "BP",
+    "name": "Balrampur",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "BN",
+    "name": "Banda",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "BB",
+    "name": "Barabanki",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "BR",
+    "name": "Bareilly",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "BS",
+    "name": "Basti",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "BH",
+    "name": "Bhadohi",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "BI",
+    "name": "Bijnor",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "BD",
+    "name": "Budaun",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "BU",
+    "name": "Bulandshahr",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "CD",
+    "name": "Chandauli",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "CT",
+    "name": "Chitrakoot",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "DE",
+    "name": "Deoria",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "ET",
+    "name": "Etah",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "EW",
+    "name": "Etawah",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "FZ",
+    "name": "Faizabad",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "FR",
+    "name": "Farrukhabad",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "FT",
+    "name": "Fatehpur",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "FI",
+    "name": "Firozabad",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "GB",
+    "name": "Gautam Buddh Nagar",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "GZ",
+    "name": "Ghaziabad",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "GP",
+    "name": "Ghazipur",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "GN",
+    "name": "Gonda",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "GR",
+    "name": "Gorakhpur",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "HM",
+    "name": "Hamirpur",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "PN",
+    "name": "Hapur",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "HR",
+    "name": "Hardoi",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "HT",
+    "name": "Hathras",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "JL",
+    "name": "Jalaun",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "JU",
+    "name": "Jaunpur",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "JH",
+    "name": "Jhansi",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "KJ",
+    "name": "Kannauj",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "KD",
+    "name": "Kanpur Dehat",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "KN",
+    "name": "Kanpur Nagar",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "KR",
+    "name": "Kasganj",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "KS",
+    "name": "Kaushambi",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "KU",
+    "name": "Kushinagar",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "LK",
+    "name": "Lakhimpur Kheri",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "LA",
+    "name": "Lalitpur",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "LU",
+    "name": "Lucknow",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "MG",
+    "name": "Maharajganj",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "MH",
+    "name": "Mahoba",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "MP",
+    "name": "Mainpuri",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "MT",
+    "name": "Mathura",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "MB",
+    "name": "Mau",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "ME",
+    "name": "Meerut",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "MI",
+    "name": "Mirzapur",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "MO",
+    "name": "Moradabad",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "MU",
+    "name": "Muzaffarnagar",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "PI",
+    "name": "Pilibhit",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "PR",
+    "name": "Pratapgarh",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "RB",
+    "name": "Raebareli",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "RA",
+    "name": "Rampur",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "SA",
+    "name": "Saharanpur",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "SM",
+    "name": "Sambhal",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "SK",
+    "name": "Sant Kabir Nagar",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "SJ",
+    "name": "Shahjahanpur",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "SH",
+    "name": "Shamli[18]",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "SV",
+    "name": "Shravasti",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "SN",
+    "name": "Siddharthnagar",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "SI",
+    "name": "Sitapur",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "SO",
+    "name": "Sonbhadra",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "SU",
+    "name": "Sultanpur",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "UN",
+    "name": "Unnao",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  },
+  {
+    "short_code": "VA",
+    "name": "Varanasi",
+    "state": "5f8eeba238bc0f72d39ccaa2"
+  }, {
+    "name": "Araria",
+    "state": "5f8eeba238bc0f72d39cca84"
+  }, {
+    "name": "Begusarai",
+    "state": "5f8eeba238bc0f72d39cca84"
+  }, {
+    "name": "Bhagalpur",
+    "state": "5f8eeba238bc0f72d39cca84"
+  }, {
+    "name": "Bhojpur",
+    "state": "5f8eeba238bc0f72d39cca84"
+  }, {
+    "name": "Darbhanga",
+    "state": "5f8eeba238bc0f72d39cca84"
+  }, {
+    "name": "East Champaran",
+    "state": "5f8eeba238bc0f72d39cca84"
+  }, {
+    "name": "Gopalganj",
+    "state": "5f8eeba238bc0f72d39cca84"
+  }, {
+    "name": "Kishanganj",
+    "state": "5f8eeba238bc0f72d39cca84"
+  }, {
+    "name": "Munger",
+    "state": "5f8eeba238bc0f72d39cca84"
+  }, {
+    "name": "Muzaffarpur",
+    "state": "5f8eeba238bc0f72d39cca84"
+  }, {
+    "name": "MUZAFFARPUR",
+    "state": "5f8eeba238bc0f72d39cca84"
+  }, {
+    "name": "Nalanda",
+    "state": "5f8eeba238bc0f72d39cca84"
+  }, {
+    "name": "Patna",
+    "state": "5f8eeba238bc0f72d39cca84"
+  }, {
+    "name": "Samastipur",
+    "state": "5f8eeba238bc0f72d39cca84"
+  }, {
+    "name": "Sitamarhi",
+    "state": "5f8eeba238bc0f72d39cca84"
+  }, {
+    "name": "Vaishali",
+    "state": "5f8eeba238bc0f72d39cca84"
+  }, {
+    "name": "West Champaran",
+    "state": "5f8eeba238bc0f72d39cca84"
+  }, {
+    "name": "Ambala",
+    "state": "5f8eeba238bc0f72d39cca8c"
+  },
+  {
+    "name": "Faridabad",
+    "state": "5f8eeba238bc0f72d39cca8c"
+  }, {
+    "name": "Gurugram",
+    "state": "5f8eeba238bc0f72d39cca8c"
+  }, {
+    "name": "Jhajjar",
+    "state": "5f8eeba238bc0f72d39cca8c"
+  }, {
+    "name": "Karnal",
+    "state": "5f8eeba238bc0f72d39cca8c"
+  }, {
+    "name": "Kurukshetra",
+    "state": "5f8eeba238bc0f72d39cca8c"
+  }, {
+    "name": "Palwal",
+    "state": "5f8eeba238bc0f72d39cca8c"
+  }, {
+    "name": "Panipat",
+    "state": "5f8eeba238bc0f72d39cca8c"
+  }, {
+    "name": "Rohtak",
+    "state": "5f8eeba238bc0f72d39cca8c"
+  }, {
+    "name": "Sonipat",
+    "state": "5f8eeba238bc0f72d39cca8c"
+  }, {
+    "name": "Yamuna Nagar",
+    "state": "5f8eeba238bc0f72d39cca8c"
+  }, {
+    "name": "Bokaro",
+    "state": "5f8eeba238bc0f72d39cca8f"
+  }, {
+    "name": "Dhanbad",
+    "state": "5f8eeba238bc0f72d39cca8f"
+  }, {
+    "name": "Palamu",
+    "state": "5f8eeba238bc0f72d39cca8f"
+  }, {
+    "name": "Dehradun",
+    "state": "5f8eeba238bc0f72d39ccaa1"
+  }, {
+    "name": "Haridwar",
+    "state": "5f8eeba238bc0f72d39ccaa1"
+  }, {
+    "name": "Nainital",
+    "state": "5f8eeba238bc0f72d39ccaa1"
+  }, {
+    "name": "US Nagar",
+    "state": "5f8eeba238bc0f72d39ccaa1"
+  }, {
+    "name": "24 North Paragnas",
+    "state": "5f8eeba238bc0f72d39ccaa3"
+  }, {
+    "name": "24 South Paragnas",
+    "state": "5f8eeba238bc0f72d39ccaa3"
+  }, {
+    "name": "Asansol",
+    "state": "5f8eeba238bc0f72d39ccaa3"
+  }, {
+    "name": "Burdawan",
+    "state": "5f8eeba238bc0f72d39ccaa3"
+  }, {
+    "name": "Darjeeling",
+    "state": "5f8eeba238bc0f72d39ccaa3"
+  }, {
+    "name": "Haldia",
+    "state": "5f8eeba238bc0f72d39ccaa3"
+  }, {
+    "name": "Hooghly",
+    "state": "5f8eeba238bc0f72d39ccaa3"
+  }, {
+    "name": "Howrah",
+    "state": "5f8eeba238bc0f72d39ccaa3"
+  }, {
+    "name": "Jalpaiguri",
+    "state": "5f8eeba238bc0f72d39ccaa3"
+  }, {
+    "name": "Kamarhati",
+    "state": "5f8eeba238bc0f72d39ccaa3"
+  }, {
+    "name": "Kolkata",
+    "state": "5f8eeba238bc0f72d39ccaa3"
+  }, {
+    "name": "Malda",
+    "state": "5f8eeba238bc0f72d39ccaa3"
+  }, {
+    "name": "Nadia",
+    "state": "5f8eeba238bc0f72d39ccaa3"
+  }, {
+    "name": "Paschim Medinipur",
+    "state": "5f8eeba238bc0f72d39ccaa3"
+  }, {
+    "name": "Purba Medinipur",
+    "state": "5f8eeba238bc0f72d39ccaa3"
+  }
+]
