@@ -4,15 +4,16 @@
  * TODO : complete the files, remove this comment
  */
 // import mongoose, { Schema } from 'mongoose';
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const BasinSchema = new mongoose.Schema(
-    {
-        name: { type: String, required: true, unique: true },
-    },
-    {
-        timestamps: true,
-    },
+  {
+    name: { type: String, required: true, unique: true },
+  },
+  {
+    timestamps: true,
+  }
 );
 
-module.exports = mongoose.model('basin', BasinSchema);
+const model = mongoose.model("basin", BasinSchema);
+module.exports = model;
