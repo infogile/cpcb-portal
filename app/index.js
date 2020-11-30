@@ -96,6 +96,10 @@ class Application {
         return this.server;
     }
 
+    getWeb(){
+        this.getExpress().use(express.static("build"));
+    }
+
     getExpress() {
         return this.express;
     }
@@ -115,7 +119,7 @@ class Application {
     run() {
         this.setUpDatabase();
         this.setUpServer();
-
+        this.getWeb();
         this.server.listen(this.serverConfig.port);
 
         console.log('server listening on port :' + this.serverConfig.port);
