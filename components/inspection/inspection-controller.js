@@ -232,6 +232,49 @@ module.exports = {
             );
         }
     },
+    async myActiveInspection(req, res) {
+        try {
+        const repo = new Repository();
+        let data = await repo.myActiveInspection(req.user._id);
+        return res.json(data);
+        } catch (error) {
+        throw new ErrorHandler(
+            500,
+            `Unknown Error Occured : ${error.message || error} `
+            // 'controller_error',
+            // error,
+        );
+        }
+    },
+    async myAllInspection(req, res) {
+        try {
+        const repo = new Repository();
+        let data = await repo.myAllInspection(req.user._id);
+        return res.json(data);
+        } catch (error) {
+        throw new ErrorHandler(
+            500,
+            `Unknown Error Occured : ${error.message || error} `
+            // 'controller_error',
+            // error,
+        );
+        }
+    },
+  async getFieldReport(req, res) {
+    try {
+      const repo = new Repository();
+      const params = req.params;
+      let data = await repo.getFieldReport(params.report_id);
+      return res.json(data);
+    } catch (error) {
+      throw new ErrorHandler(
+        500,
+        `Unknown Error Occured : ${error.message || error} `
+        // 'controller_error',
+        // error,
+      );
+    }
+  },
     async myFieldReport(req, res) {
         try {
             multiUpload(req, res, async function (err) {

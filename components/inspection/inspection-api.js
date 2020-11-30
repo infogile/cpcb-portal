@@ -30,6 +30,12 @@ router.delete('/:id', controller.delete);
 router.get('/mystatus', controller.myStatus);
 // my Inspection
 router.post('/myinspection', controller.myInspection);
+// my active inspection
+router.post("/myactiveinspection", controller.myActiveInspection);
+//all my active inspection
+router.post("/myallinspection", controller.myAllInspection);
+//get field report
+router.get("/getfieldreport/:report_id", controller.getFieldReport);
 // my field report
 router.post('/myfieldReport', controller.myFieldReport);
 module.exports = router;

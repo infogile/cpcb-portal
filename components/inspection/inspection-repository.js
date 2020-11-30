@@ -56,6 +56,51 @@ class inspectionRepository {
             .exec();
         return data;
     }
+    async myActiveInspection(id) {
+        const data = await Inspection.find({
+        assignedTo: id,
+        status: 1,
+        })
+        .select(["factory", "status"])
+        .populate({
+            path: "factory",
+            populate: [
+            { path: "sector" },
+            { path: "state", select: "name" },
+            { path: "district", select: "name" },
+            { path: "basin" },
+            ],
+        })
+        .exec();
+        return data;
+    }
+    async myAllInspection(id) {
+        const data = await Inspection.find({
+        assignedTo: id,
+        })
+        .select(["factory", "status"])
+        .populate({
+            path: "factory",
+            populate: [
+            { path: "sector" },
+            { path: "state", select: "name" },
+            { path: "district", select: "name" },
+            { path: "basin" },
+            ],
+        })
+        .exec();
+        return data;
+    }
+    async getFieldReport(reportId) {
+        const data = await Inspection.findById(reportId)
+        .select(["factory", "status", "fieldReport"])
+        .populate({
+            path: "factory",
+            populate: [{ path: "basin" }, { path: "sector" }],
+        })
+        .exec();
+        return data;
+    }
 }
 
 module.exports = inspectionRepository;
