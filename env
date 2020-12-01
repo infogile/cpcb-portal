@@ -1,0 +1,19 @@
+PORT=80
+NODE_ENV=production
+APINAME=medigo-api
+API_PREFIX=api
+
+# if using mongo
+MONGO_CONNECTION_STRING=mongodb://suraj:Ss%409928466181@157.245.97.9:27017/dsjgnhs?authSource=admin&readPreference=primary&appname=MongoDB%20Compass&ssl=false
+JWT_SECRET=ADTHJARY$%65423srfgH
+LOG_LEVEL=SILLY
+SECRETACCESSKEY=qsmAg2FVAszmWBN8iq5MQrsjs0DlcsFWN2UTqXuM
+ACCESSKEYID=AKIAI3IUCMJSQIHDCN6A
+# #3rd party services
+# GA_TOKEN=XX-XXXXXX
+# GA_BUFFERTIME=5000
+# GOOGLE_APP_SERVER_KEY=123
+# NEWRELIC_KEY=abc
+# NEWRELIC_LOG_LEVEL=info
+
+# # DB initial data
