@@ -21,22 +21,18 @@ class Login {
         .exec()
         .then((user) => {
           if (!user) {
-            return res
-              .status(400)
-              .json({
-                message: "no user registered",
-                type: "error",
-                loading: false,
-              });
+            return res.status(400).json({
+              message: "no user registered",
+              type: "error",
+              loading: false,
+            });
           }
           if (!user.comparePassword(password)) {
-            return res
-              .status(400)
-              .json({
-                message: "Invalid Password",
-                type: "error",
-                loading: false,
-              });
+            return res.status(400).json({
+              message: "Invalid Password",
+              type: "error",
+              loading: false,
+            });
           }
           const payload = {
             id: user._id,
@@ -48,6 +44,7 @@ class Login {
               success: true,
               token: "bearer " + token,
               user: user.username,
+              role: user.role,
             });
           });
         })
