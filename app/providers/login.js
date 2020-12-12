@@ -38,6 +38,7 @@ class Login {
             id: user._id,
             username: user.username,
             role: user.role,
+            state: user.state,
           };
           jwt.sign(payload, process.env.JWT_SECRET, (err, token) => {
             res.json({

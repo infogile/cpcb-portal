@@ -6,6 +6,7 @@
 
 // import Inspection from './inspection';
 const mongoose = require("mongoose");
+var ObjectId = require("mongoose").Types.ObjectId;
 const Inspection = require("./inspection");
 
 class inspectionRepository {
@@ -41,6 +42,22 @@ class inspectionRepository {
   }
   async agg(agg) {
     const data = await Inspection.aggregate(agg).exec();
+    return data;
+  }
+  async allInspectionsGroupedByStatus() {
+    const data = await Inspection.aggregate([
+      {
+        $group: {
+          _id: {
+            status: "$status",
+          },
+          count: { $sum: 1 },
+          factory: {
+            $push: "$$factory.basin",
+          },
+        },
+      },
+    ]).exec();
     return data;
   }
   async myInspection(id, date) {
@@ -85,6 +102,23 @@ class inspectionRepository {
       assignedTo: id,
     })
       .select(["factory", "status"])
+      .populate({
+        path: "factory",
+        populate: [
+          { path: "sector" },
+          { path: "state", select: "name" },
+          { path: "district", select: "name" },
+          { path: "basin" },
+        ],
+      })
+      .exec();
+    return data;
+  }
+  async myCompletedInspections(stateId) {
+    const data = await Inspection.find({
+      "factory.state": stateId,
+    })
+      .select(["factory", "status", "reports"])
       .populate({
         path: "factory",
         populate: [

@@ -5,6 +5,7 @@
  */
 const mongoose = require("mongoose");
 const Repository = require("./inspection-repository");
+const UserRepository = require("../user/user-repository");
 const transformer = require("./inspection-transformer");
 const ErrorHandler = require("ErrorHandler");
 var aws = require("aws-sdk"),
@@ -201,6 +202,20 @@ module.exports = {
       );
     }
   },
+  async allInspectionsGroupedByStatus(req, res) {
+    try {
+      const repo = new Repository();
+      let data = await repo.allInspectionsGroupedByStatus();
+      return res.json(data);
+    } catch (error) {
+      throw new ErrorHandler(
+        500,
+        `Unknown Error Occured : ${error.message || error} `
+        // 'controller_error',
+        // error,
+      );
+    }
+  },
   async myInspection(req, res) {
     try {
       const repo = new Repository();
@@ -233,6 +248,20 @@ module.exports = {
     try {
       const repo = new Repository();
       let data = await repo.myAllInspection(req.user._id);
+      return res.json(data);
+    } catch (error) {
+      throw new ErrorHandler(
+        500,
+        `Unknown Error Occured : ${error.message || error} `
+        // 'controller_error',
+        // error,
+      );
+    }
+  },
+  async myCompletedInspections(req, res) {
+    try {
+      const repo = new Repository();
+      let data = await repo.myCompletedInspections(req.user.state);
       return res.json(data);
     } catch (error) {
       throw new ErrorHandler(

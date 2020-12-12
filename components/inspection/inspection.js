@@ -14,6 +14,8 @@ const InspectionSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
+    inspectionDate: { type: Date },
+    inspectionReportUploadDate: { type: Date },
     status: { type: Number, default: 0 }, // 0 - Assigned | 1 - Inspected | 2 - Completed | 3 - SOS
     attendance: {
       entrylocation: { type: { type: String }, coordinates: [String] },

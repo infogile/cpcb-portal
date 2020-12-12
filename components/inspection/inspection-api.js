@@ -29,6 +29,11 @@ router.put("/test-upload", controller.update);
 router.delete("/:id", controller.delete);
 // my status
 router.get("/mystatus", controller.myStatus);
+//all inspection grouped by status
+router.get(
+  "/allinspections_grouped_by_status",
+  controller.allInspectionsGroupedByStatus
+);
 // my Inspection
 router.post("/myinspection", controller.myInspection);
 // my active inspection
@@ -37,6 +42,8 @@ router.post("/myactiveinspection", controller.myActiveInspection);
 router.post("/myallinspection", controller.myAllInspection);
 //get field report
 router.get("/getfieldreport/:report_id", controller.getFieldReport);
+//get completed inspections for a state(spcb)
+router.get("/mycompletedinspections", controller.myCompletedInspections);
 // my field report
 router.post("/myfieldReport", controller.myFieldReport);
 //upload consent copy
