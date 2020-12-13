@@ -33,6 +33,7 @@ class Login {
                         res.json({
                             success: true,
                             token: 'bearer ' + token,
+                            role: user.role,
                         });
                     });
                 })
