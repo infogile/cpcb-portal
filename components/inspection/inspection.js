@@ -194,6 +194,12 @@ const InspectionSchema = new mongoose.Schema(
         createdBy: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
       },
     ],
+    action: {
+      complianceStatus: { type: Boolean }, // Compliance status as per spcb
+      date: { type: Date }, // action date
+      finalRecommendation: { type: String, trim: true }, // final recommendation for action
+      report: { type: String, trim: true }, // action report
+    },
     sos: {
       type: String,
     },

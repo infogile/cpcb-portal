@@ -261,7 +261,11 @@ module.exports = {
   async myCompletedInspections(req, res) {
     try {
       const repo = new Repository();
-      let data = await repo.myCompletedInspections(req.user.state);
+      const { state } = req.user;
+      if (!state) {
+        throw new Error();
+      }
+      let data = await repo.myCompletedInspections(state);
       return res.json(data);
     } catch (error) {
       throw new ErrorHandler(
