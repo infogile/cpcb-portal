@@ -146,6 +146,16 @@ class inspectionRepository {
     }
     return data;
   }
+  async getInpsectionReport(id) {
+    const data = await Inspection.findById(id)
+      .select()
+      .populate({
+        path: "factory",
+        populate: [{ path: "basin" }, { path: "sector" }],
+      })
+      .exec();
+    return data;
+  }
   async getFieldReport(reportId) {
     const data = await Inspection.findById(reportId)
       .select([

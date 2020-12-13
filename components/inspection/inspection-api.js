@@ -21,6 +21,7 @@ router.get("/count", controller.count);
 // Create a Inspection
 router.post("/", controller.create);
 
+router.get("/getinspectionreport/:id", controller.getInpsectionReport);
 // Update a Inspection
 router.put("/:id", controller.update);
 router.put("/test-upload", controller.update);

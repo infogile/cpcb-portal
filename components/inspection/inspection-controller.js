@@ -291,6 +291,21 @@ module.exports = {
       );
     }
   },
+  async getInpsectionReport(req, res) {
+    try {
+      const repo = new Repository();
+      const params = req.params;
+      let data = await repo.getInpsectionReport(params.id);
+      return res.json(data);
+    } catch (error) {
+      throw new ErrorHandler(
+        500,
+        `Unknown Error Occured : ${error.message || error} `
+        // 'controller_error',
+        // error,
+      );
+    }
+  },
   async myFieldReport(req, res) {
     try {
       multiUpload(req, res, async function (err) {
