@@ -8,6 +8,7 @@
 const mongoose = require("mongoose");
 var ObjectId = require("mongoose").Types.ObjectId;
 const Inspection = require("./inspection");
+const Factory = require("../factory/factory");
 
 class inspectionRepository {
   async get() {
@@ -115,20 +116,34 @@ class inspectionRepository {
     return data;
   }
   async myCompletedInspections(stateId) {
-    const data = await Inspection.find({
-      "factory.state": stateId,
+    let data = [];
+    const factoriesInState = await Factory.find({
+      state: stateId,
     })
-      .select(["factory", "status", "reports"])
-      .populate({
-        path: "factory",
-        populate: [
-          { path: "sector" },
-          { path: "state", select: "name" },
-          { path: "district", select: "name" },
-          { path: "basin" },
-        ],
-      })
+      .select(["_id"])
       .exec();
+    if (factoriesInState && factoriesInState.length > 0) {
+      const factoryIds = factoriesInState.map((fac) => fac.id);
+
+      data = await Inspection.find({ factory: { $in: factoryIds } })
+        .select(["factory", "status", "reports", "assignedTo"])
+        .populate([
+          {
+            path: "factory",
+            populate: [
+              { path: "sector" },
+              { path: "state", select: "name" },
+              { path: "district", select: "name" },
+              { path: "basin" },
+            ],
+          },
+          {
+            path: "assignedTo",
+            select: "username",
+          },
+        ])
+        .exec();
+    }
     return data;
   }
   async getFieldReport(reportId) {
