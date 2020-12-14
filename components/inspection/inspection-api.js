@@ -59,4 +59,10 @@ router.post(
   helpers.uploadReport.single("inspectionreport"),
   controller.uploadReport
 );
+//upload action report
+router.post(
+  "/actionreport",
+  helpers.uploadReport.single("actionreport"),
+  controller.uploadReport
+);
 module.exports = router;
