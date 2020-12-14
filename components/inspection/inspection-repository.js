@@ -125,7 +125,10 @@ class inspectionRepository {
     if (factoriesInState && factoriesInState.length > 0) {
       const factoryIds = factoriesInState.map((fac) => fac.id);
 
-      data = await Inspection.find({ factory: { $in: factoryIds } })
+      data = await Inspection.find({
+        factory: { $in: factoryIds },
+        status: { $gt: 0 },
+      })
         .select(["factory", "status", "reports", "assignedTo"])
         .populate([
           {
