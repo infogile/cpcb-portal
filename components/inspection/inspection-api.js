@@ -59,6 +59,30 @@ router.post(
   helpers.uploadReport.single("inspectionreport"),
   controller.uploadReport
 );
+//upload air consent
+router.post(
+  "/airconsent",
+  helpers.uploadReport.single("airconsent"),
+  controller.uploadReport
+);
+//upload water consent
+router.post(
+  "/waterconsent",
+  helpers.uploadReport.single("waterconsent"),
+  controller.uploadReport
+);
+//upload cgwa noc
+router.post(
+  "/cgwaNoc",
+  helpers.uploadReport.single("cgwaNoc"),
+  controller.uploadReport
+);
+//upload hazardous consent
+router.post(
+  "/hazardousconsent",
+  helpers.uploadReport.single("hazardousconsent"),
+  controller.uploadReport
+);
 //upload action report
 router.post(
   "/actionreport",
