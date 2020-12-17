@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 module.exports = {
   env: process.env.NODE_ENV || "development",
   protocol: process.env.NODE_ENV === "production" ? "https" : "http", // http or https
