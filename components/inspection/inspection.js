@@ -25,6 +25,7 @@ const InspectionSchema = new mongoose.Schema(
     finalRecommendation: { type: String, trim: true }, // Final Recommendation
     complianceStatus: { type: Boolean }, // Compliance status as per discharge norms
     tempcloseStatus: { type: Boolean }, // Close status 
+    showcausenoticeStatus: { type: Boolean }, // condition of non compliance
     wasteWaterGeneration: { type: String, trim: true }, // Waste water generation
     wasteWaterDischarge: { type: String, trim: true }, // Waste water discharge
     bod: { type: String, trim: true }, // BOD
@@ -198,6 +199,7 @@ const InspectionSchema = new mongoose.Schema(
     action: {
       tempcloseStatus: { type: Boolean }, // Close status
       complianceStatus: { type: Boolean }, // Compliance status as per spcb
+      showcausenoticeStatus: { type: Boolean }, // condition of non-compliance
       date: { type: Date }, // action date
       finalRecommendation: { type: String, trim: true }, // final recommendation for action
       report: { type: String, trim: true }, // action report
