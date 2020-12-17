@@ -24,7 +24,7 @@ const InspectionSchema = new mongoose.Schema(
     teamNames: { type: String, trim: true }, // Memeber of inspection Team
     finalRecommendation: { type: String, trim: true }, // Final Recommendation
     complianceStatus: { type: Boolean }, // Compliance status as per discharge norms
-    tempcloseStatus: { type: Boolean }, // Close status 
+    tempcloseStatus: { type: Boolean }, // Close status
     showcausenoticeStatus: { type: Boolean }, // condition of non compliance
     wasteWaterGeneration: { type: String, trim: true }, // Waste water generation
     wasteWaterDischarge: { type: String, trim: true }, // Waste water discharge
@@ -197,8 +197,7 @@ const InspectionSchema = new mongoose.Schema(
       },
     ],
     action: {
-      tempcloseStatus: { type: Boolean }, // Close status
-      complianceStatus: { type: Boolean }, // Compliance status as per spcb
+      complianceStatus: { type: Number, default: 1 }, // Compliance status as per spcb > non-compliance - 0, compliance - 1, temporary closed - 2, permanently closed - 3
       showcausenoticeStatus: { type: Boolean }, // condition of non-compliance
       date: { type: Date }, // action date
       finalRecommendation: { type: String, trim: true }, // final recommendation for action
