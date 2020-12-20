@@ -33,6 +33,16 @@ class inspectionRepository {
     }).exec();
     return data;
   }
+  async updateAction(id, action) {
+    const data = await Inspection.findOneAndUpdate(
+      { _id: id },
+      { $push: { actions: action } },
+      {
+        new: true,
+      }
+    ).exec();
+    return data;
+  }
   async delete(id) {
     const data = await Inspection.remove({ _id: id }).exec();
     return data;
