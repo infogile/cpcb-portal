@@ -24,6 +24,8 @@ router.post("/", controller.create);
 router.get("/getinspectionreport/:id", controller.getInpsectionReport);
 // Update a Inspection
 router.put("/:id", controller.update);
+// Update actions
+router.put("/action/:id/:submit?", controller.updateAction);
 router.put("/test-upload", controller.update);
 
 // Delete a Inspection

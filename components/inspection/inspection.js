@@ -191,18 +191,15 @@ const InspectionSchema = new mongoose.Schema(
     },
     actions: [
       {
-        title: String,
-        description: String,
+        complianceStatus: { type: Number, default: 1 }, // Compliance status as per spcb > non-compliance - 0, compliance - 1, temporary closed - 2, permanently closed - 3
+        showcausenoticeStatus: { type: Boolean }, // condition of non-compliance
+        date: { type: Date }, // action date
+        finalRecommendation: { type: String, trim: true }, // final recommendation for action
+        reports: [{ type: String, trim: true }], // action reports
         createdBy: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+        createdAt: { type: Date, default: Date.now },
       },
     ],
-    action: {
-      complianceStatus: { type: Number, default: 1 }, // Compliance status as per spcb > non-compliance - 0, compliance - 1, temporary closed - 2, permanently closed - 3
-      showcausenoticeStatus: { type: Boolean }, // condition of non-compliance
-      date: { type: Date }, // action date
-      finalRecommendation: { type: String, trim: true }, // final recommendation for action
-      report: { type: String, trim: true }, // action report
-    },
     sos: {
       type: String,
     },

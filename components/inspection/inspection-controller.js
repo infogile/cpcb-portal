@@ -118,6 +118,31 @@ module.exports = {
       );
     }
   },
+  async updateAction(req, res) {
+    try {
+      const repo = new Repository();
+      const id = req.params.id;
+      const submit = req.params.submit;
+      const action = req.body;
+      if (submit) {
+        repo.updateById(id, { status: 3 });
+      }
+      console.log(req.user._id);
+      const data = await repo.updateAction(id, {
+        ...action,
+        createdBy: req.user._id,
+      });
+      return res.json({ data: data });
+    } catch (error) {
+      throw new ErrorHandler(
+        500,
+        `Unknown Error Occured : ${error.message || error} `
+        // 'controller_error',
+        // error,
+      );
+    }
+  },
+
   async delete(req, res) {
     try {
       const id = req.params.id;
