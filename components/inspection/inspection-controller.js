@@ -51,6 +51,20 @@ module.exports = {
       );
     }
   },
+  async allInspection(req, res) {
+    try {
+      const repo = new Repository();
+      let data = await repo.allInspection();
+      return res.json(data);
+    } catch (error) {
+      throw new ErrorHandler(
+        500,
+        `Unknown Error Occured : ${error.message || error} `
+        // 'controller_error',
+        // error,
+      );
+    }
+  },
   async count(req, res) {
     try {
       const repo = new Repository();

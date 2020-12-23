@@ -12,6 +12,9 @@ const helpers = require("../../helper");
 /* GET All Data */
 router.get("/", controller.get);
 
+// all Inspection
+router.get("/allinspection", controller.allInspection);
+
 // Get All document/collection count
 router.get("/count", controller.count);
 
