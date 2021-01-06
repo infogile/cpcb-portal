@@ -115,7 +115,6 @@ class inspectionRepository {
       .select(["factory", "status"])
       .populate({
         path: "factory",
-        select: "basin",
         populate: [
           { path: "basin" },
         ],
