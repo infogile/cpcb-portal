@@ -124,16 +124,22 @@ class inspectionRepository {
   }
   async allInspection() {
     const data = await Inspection.find()
-      .select(["factory", "status", "assignedTo"])
-      .populate([{
+      .select(["factory", "status", "report","assignedTo", "inspectionDate", "inspectionReportUploadDate",
+    ])
+      .populate([
+      {
         path: "factory",
         populate: [
           { path: "basin" },
-          { path: "sector" },
+          { path: "state", select: "name"},
+          { path: "sector", select: "name"},
         ],
-      },{
-        path: "assignedTo"
-      }])
+      },
+      {
+        path: "assignedTo",
+        select: "username",
+      },
+    ])
       .exec();
     return data;
   }
