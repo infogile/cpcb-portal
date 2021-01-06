@@ -125,8 +125,7 @@ class inspectionRepository {
   }
   async allInspection() {
     const data = await Inspection.find()
-      .select(["factory", "status", "report","assignedTo", "inspectionDate", 
-
+      .select(["factory", "status", "report","assignedTo", "inspectionDate", "inspectionReportUploadDate",
     ])
       .populate([
       {
