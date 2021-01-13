@@ -18,7 +18,7 @@ const FactorySchema = new mongoose.Schema(
     },
     location: { type: { type: String }, coordinates: [Number] },
     unitcode: { type: String, required: true, unique: true, trim: true },
-    state: { type: String, required: true, lowercase: true, trim: true },
+    state: { ref: "state", type: mongoose.Schema.Types.ObjectId, required: true, lowercase: true, trim: true },
     district: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "district",
