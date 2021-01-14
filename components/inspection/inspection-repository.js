@@ -131,8 +131,9 @@ class inspectionRepository {
         path: "factory",
         populate: [
           { path: "basin" },
-          { path: "state", select: "name"},
+          { path: "state"},
           { path: "sector", select: "name"},
+          { path: "district", populate : [{ path: "state"},], },
         ],
       },
       {
