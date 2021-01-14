@@ -133,6 +133,7 @@ class inspectionRepository {
           { path: "basin" },
           { path: "state", select: "name"},
           { path: "sector", select: "name"},
+          { path: "district", populate : [{ path: "state"},], },
         ],
       },
       {
