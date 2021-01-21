@@ -161,7 +161,7 @@ class inspectionRepository {
         factory: { $in: factoryIds },
         status: { $gt: 0 },
       })
-        .select(["factory", "status", "reports", "assignedTo"])
+        .select(["factory", "status", "reports", "assignedTo", "actions"])
         .populate([
           {
             path: "factory",
@@ -175,6 +175,9 @@ class inspectionRepository {
           {
             path: "assignedTo",
             select: "username",
+          },
+          {
+            path: "actions",
           },
         ])
         .exec();
