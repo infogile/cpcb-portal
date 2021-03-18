@@ -8,8 +8,8 @@ module.exports = {
 
   // TODO update this for https
   certificates: {
-    key: fs.readFileSync("/home/dropletadmin/.ssl/privkey.pem", "utf8"),
-    cert: fs.readFileSync("/home/dropletadmin/.ssl/cert.pem", "utf8"),
-    ca: fs.readFileSync("/home/dropletadmin/.ssl/chain.pem", "utf8"),
+    key: fs.readFileSync("/etc/letsencrypt/live/www.gangagpis.in/privkey.pem", "utf8"),
+    cert: fs.readFileSync("/etc/letsencrypt/live/www.gangagpis.in/cert.pem", "utf8"),
+    ca: fs.readFileSync("/etc/letsencrypt/live/www.gangagpis.in/chain.pem", "utf8"),
   },
 };
